@@ -1,0 +1,228 @@
+import sqlite3
+# Establish connection to Senate114.txt file
+conn = sqlite3.connect('Senate114.txt.sqlite3')
+cur = conn.cursor()
+# Create Table
+cur.execute('DROP TABLE IF EXISTS Senate114 ')
+cur.execute('CREATE TABLE Senate114 (First_Name TEXT, Last_Name TEXT, State TEXT, Party TEXT, Senate_Number INTEGER)')
+
+
+cur.execute('INSERT INTO Senate114 (First_Name, Last_Name, State, Party, Senate_Number) VALUES ( ?, ?, ?, ?, ?)',
+( 'Richard', 'Shelby', 'Alabama', 'R', 114 ) )
+cur.execute('INSERT INTO Senate114 (First_Name, Last_Name, State, Party, Senate_Number) VALUES ( ?, ?, ?, ?, ?)',
+( 'Jeff', 'Sessions', 'Alabama', 'R', 114 ) )
+cur.execute('INSERT INTO Senate114 (First_Name, Last_Name, State, Party, Senate_Number) VALUES ( ?, ?, ?, ?, ?)',
+( 'Dan', 'Sullivan', 'Alaska', 'R', 114 ) )
+cur.execute('INSERT INTO Senate114 (First_Name, Last_Name, State, Party, Senate_Number) VALUES ( ?, ?, ?, ?, ?)',
+( 'Lisa', 'Murkowski', 'Alaska', 'R', 114 ) )
+cur.execute('INSERT INTO Senate114 (First_Name, Last_Name, State, Party, Senate_Number) VALUES ( ?, ?, ?, ?, ?)',
+( 'John', 'McCain', 'Arizona', 'R', 114 ) )
+cur.execute('INSERT INTO Senate114 (First_Name, Last_Name, State, Party, Senate_Number) VALUES ( ?, ?, ?, ?, ?)',
+( 'Jeff', 'Flake', 'Arizona', 'R', 114 ) )
+cur.execute('INSERT INTO Senate114 (First_Name, Last_Name, State, Party, Senate_Number) VALUES ( ?, ?, ?, ?, ?)',
+( 'Tom', 'Cotton', 'Arkansas', 'R', 114 ) )
+cur.execute('INSERT INTO Senate114 (First_Name, Last_Name, State, Party, Senate_Number) VALUES ( ?, ?, ?, ?, ?)',
+( 'Jon', 'Boozman', 'Arkansas', 'R', 114 ) )
+cur.execute('INSERT INTO Senate114 (First_Name, Last_Name, State, Party, Senate_Number) VALUES ( ?, ?, ?, ?, ?)',
+( 'Dianne', 'Feinstein', 'California', 'D', 114 ) )
+cur.execute('INSERT INTO Senate114 (First_Name, Last_Name, State, Party, Senate_Number) VALUES ( ?, ?, ?, ?, ?)',
+( 'Barbara', 'Boxer', 'California', 'D', 114 ) )
+cur.execute('INSERT INTO Senate114 (First_Name, Last_Name, State, Party, Senate_Number) VALUES ( ?, ?, ?, ?, ?)',
+( 'Cory', 'Gardner', 'Colorado', 'R', 114 ) )
+cur.execute('INSERT INTO Senate114 (First_Name, Last_Name, State, Party, Senate_Number) VALUES ( ?, ?, ?, ?, ?)',
+( 'Michael', 'Bennet', 'Colorado', 'D', 114 ) )
+cur.execute('INSERT INTO Senate114 (First_Name, Last_Name, State, Party, Senate_Number) VALUES ( ?, ?, ?, ?, ?)',
+( 'Richard', 'Blumenthal', 'Connecticut', 'D', 114 ) )
+cur.execute('INSERT INTO Senate114 (First_Name, Last_Name, State, Party, Senate_Number) VALUES ( ?, ?, ?, ?, ?)',
+( 'Chris', 'Murphy', 'Connecticut', 'D', 114 ) )
+cur.execute('INSERT INTO Senate114 (First_Name, Last_Name, State, Party, Senate_Number) VALUES ( ?, ?, ?, ?, ?)',
+( 'Thomas', 'Carper', 'Delaware', 'D', 114 ) )
+cur.execute('INSERT INTO Senate114 (First_Name, Last_Name, State, Party, Senate_Number) VALUES ( ?, ?, ?, ?, ?)',
+( 'Chris', 'Coons', 'Delaware', 'D', 114 ) )
+cur.execute('INSERT INTO Senate114 (First_Name, Last_Name, State, Party, Senate_Number) VALUES ( ?, ?, ?, ?, ?)',
+( 'Bill', 'Nelson', 'Florida', 'D', 114 ) )
+cur.execute('INSERT INTO Senate114 (First_Name, Last_Name, State, Party, Senate_Number) VALUES ( ?, ?, ?, ?, ?)',
+( 'Marco', 'Rubio', 'Florida', 'R', 114 ) )
+cur.execute('INSERT INTO Senate114 (First_Name, Last_Name, State, Party, Senate_Number) VALUES ( ?, ?, ?, ?, ?)',
+( 'David', 'Perdue', 'Georgia', 'R', 114 ) )
+cur.execute('INSERT INTO Senate114 (First_Name, Last_Name, State, Party, Senate_Number) VALUES ( ?, ?, ?, ?, ?)',
+( 'Johnny', 'Isakson', 'Georgia', 'R', 114 ) )
+cur.execute('INSERT INTO Senate114 (First_Name, Last_Name, State, Party, Senate_Number) VALUES ( ?, ?, ?, ?, ?)',
+( 'Mazie', 'Hirona', 'Hawaii', 'D', 114 ) )
+cur.execute('INSERT INTO Senate114 (First_Name, Last_Name, State, Party, Senate_Number) VALUES ( ?, ?, ?, ?, ?)',
+( 'Brian', 'Schatz', 'Hawaii', 'D', 114 ) )
+cur.execute('INSERT INTO Senate114 (First_Name, Last_Name, State, Party, Senate_Number) VALUES ( ?, ?, ?, ?, ?)',
+( 'Mike', 'Crapo', 'Idaho', 'R', 114 ) )
+cur.execute('INSERT INTO Senate114 (First_Name, Last_Name, State, Party, Senate_Number) VALUES ( ?, ?, ?, ?, ?)',
+( 'Jim', 'Risch', 'Idaho', 'R', 114 ) )
+cur.execute('INSERT INTO Senate114 (First_Name, Last_Name, State, Party, Senate_Number) VALUES ( ?, ?, ?, ?, ?)',
+( 'Richard', 'Durbin', 'Illinois', 'D', 114 ) )
+cur.execute('INSERT INTO Senate114 (First_Name, Last_Name, State, Party, Senate_Number) VALUES ( ?, ?, ?, ?, ?)',
+( 'Mark', 'Kirk', 'Illinois', 'R', 114 ) )
+cur.execute('INSERT INTO Senate114 (First_Name, Last_Name, State, Party, Senate_Number) VALUES ( ?, ?, ?, ?, ?)',
+( 'Joe', 'Donnely', 'Indiana', 'D', 114 ) )
+cur.execute('INSERT INTO Senate114 (First_Name, Last_Name, State, Party, Senate_Number) VALUES ( ?, ?, ?, ?, ?)',
+( 'Dan', 'Coats', 'Indiana', 'R', 114 ) )
+cur.execute('INSERT INTO Senate114 (First_Name, Last_Name, State, Party, Senate_Number) VALUES ( ?, ?, ?, ?, ?)',
+( 'Joni', 'Ernst', 'Iowa', 'R', 114 ) )
+cur.execute('INSERT INTO Senate114 (First_Name, Last_Name, State, Party, Senate_Number) VALUES ( ?, ?, ?, ?, ?)',
+( 'Chuck', 'Grassley', 'Iowa', 'R', 114 ) )
+cur.execute('INSERT INTO Senate114 (First_Name, Last_Name, State, Party, Senate_Number) VALUES ( ?, ?, ?, ?, ?)',
+( 'Jerry', 'Moran', 'Kansas', 'R', 114 ) )
+cur.execute('INSERT INTO Senate114 (First_Name, Last_Name, State, Party, Senate_Number) VALUES ( ?, ?, ?, ?, ?)',
+( 'Pat', 'Roberts', 'Kansas', 'R', 114 ) )
+cur.execute('INSERT INTO Senate114 (First_Name, Last_Name, State, Party, Senate_Number) VALUES ( ?, ?, ?, ?, ?)',
+( 'Mitch', 'McConnell', 'Kentucy', 'R', 114 ) )
+cur.execute('INSERT INTO Senate114 (First_Name, Last_Name, State, Party, Senate_Number) VALUES ( ?, ?, ?, ?, ?)',
+( 'Rand', 'Paul', 'Kentucky', 'R', 114 ) )
+cur.execute('INSERT INTO Senate114 (First_Name, Last_Name, State, Party, Senate_Number) VALUES ( ?, ?, ?, ?, ?)',
+( 'David', 'Vitter', 'Louisiana', 'R', 114 ) )
+cur.execute('INSERT INTO Senate114 (First_Name, Last_Name, State, Party, Senate_Number) VALUES ( ?, ?, ?, ?, ?)',
+( 'Bill', 'Cassidy', 'Louisiana', 'R', 114 ) )
+cur.execute('INSERT INTO Senate114 (First_Name, Last_Name, State, Party, Senate_Number) VALUES ( ?, ?, ?, ?, ?)',
+( 'Susan', 'Collins', 'Maine', 'R', 114 ) )
+cur.execute('INSERT INTO Senate114 (First_Name, Last_Name, State, Party, Senate_Number) VALUES ( ?, ?, ?, ?, ?)',
+( 'Angus', 'King', 'Maine', 'I', 114 ) )
+cur.execute('INSERT INTO Senate114 (First_Name, Last_Name, State, Party, Senate_Number) VALUES ( ?, ?, ?, ?, ?)',
+( 'Benjamin', 'Cardin', 'Maryland', 'D', 114 ) )
+cur.execute('INSERT INTO Senate114 (First_Name, Last_Name, State, Party, Senate_Number) VALUES ( ?, ?, ?, ?, ?)',
+( 'Barbara', 'Mikulski', 'Maryland', 'D', 114 ) )
+cur.execute('INSERT INTO Senate114 (First_Name, Last_Name, State, Party, Senate_Number) VALUES ( ?, ?, ?, ?, ?)',
+( 'Edward', 'Markey', 'Massachusetts', 'D', 114 ) )
+cur.execute('INSERT INTO Senate114 (First_Name, Last_Name, State, Party, Senate_Number) VALUES ( ?, ?, ?, ?, ?)',
+( 'Elizabeth', 'Warren', 'Massachusetts', 'D', 114 ) )
+cur.execute('INSERT INTO Senate114 (First_Name, Last_Name, State, Party, Senate_Number) VALUES ( ?, ?, ?, ?, ?)',
+( 'Gary', 'Peters', 'Michigan', 'D', 114 ) )
+cur.execute('INSERT INTO Senate114 (First_Name, Last_Name, State, Party, Senate_Number) VALUES ( ?, ?, ?, ?, ?)',
+( 'Debbie', 'Stebenow', 'Michigan', 'D', 114 ) )
+cur.execute('INSERT INTO Senate114 (First_Name, Last_Name, State, Party, Senate_Number) VALUES ( ?, ?, ?, ?, ?)',
+( 'Amy', 'Klobuchar', 'Minnesota', 'D', 114 ) )
+cur.execute('INSERT INTO Senate114 (First_Name, Last_Name, State, Party, Senate_Number) VALUES ( ?, ?, ?, ?, ?)',
+( 'Al', 'Franken', 'Minnesota', 'D', 114 ) )
+cur.execute('INSERT INTO Senate114 (First_Name, Last_Name, State, Party, Senate_Number) VALUES ( ?, ?, ?, ?, ?)',
+( 'Thad', 'Cochran', 'Mississippi', 'R', 114 ) )
+cur.execute('INSERT INTO Senate114 (First_Name, Last_Name, State, Party, Senate_Number) VALUES ( ?, ?, ?, ?, ?)',
+( 'Roger', 'Wicker', 'Mississippi', 'R', 114 ) )
+cur.execute('INSERT INTO Senate114 (First_Name, Last_Name, State, Party, Senate_Number) VALUES ( ?, ?, ?, ?, ?)',
+( 'Claire', 'McCaskill', 'Missouri', 'D', 114 ) )
+cur.execute('INSERT INTO Senate114 (First_Name, Last_Name, State, Party, Senate_Number) VALUES ( ?, ?, ?, ?, ?)',
+( 'Roy', 'Blunt', 'Missouri', 'R', 114 ) )
+cur.execute('INSERT INTO Senate114 (First_Name, Last_Name, State, Party, Senate_Number) VALUES ( ?, ?, ?, ?, ?)',
+('Steve','Daines','Montana','R',114 ) )
+cur.execute('INSERT INTO Senate114 (First_Name, Last_Name, State, Party, Senate_Number) VALUES ( ?, ?, ?, ?, ?)',
+('John','Walsh','Montana','D', 114 ) )
+cur.execute('INSERT INTO Senate114 (First_Name, Last_Name, State, Party, Senate_Number) VALUES ( ?, ?, ?, ?, ?)',
+('Ben','Sasse','Nebraska','R',114 ) )
+cur.execute('INSERT INTO Senate114 (First_Name, Last_Name, State, Party, Senate_Number) VALUES ( ?, ?, ?, ?, ?)',
+('Deb','Fischer','Nebraska','R',114 ) )
+cur.execute('INSERT INTO Senate114 (First_Name, Last_Name, State, Party, Senate_Number) VALUES ( ?, ?, ?, ?, ?)',
+('Harry','Reid','Nevada','D',114 ) )
+cur.execute('INSERT INTO Senate114 (First_Name, Last_Name, State, Party, Senate_Number) VALUES ( ?, ?, ?, ?, ?)',
+('Dean','Heller','Nevada','R',114 ) )
+cur.execute('INSERT INTO Senate114 (First_Name, Last_Name, State, Party, Senate_Number) VALUES ( ?, ?, ?, ?, ?)',
+('Jeanna','Shaheen','New Hampshire','D',114 ) )
+cur.execute('INSERT INTO Senate114 (First_Name, Last_Name, State, Party, Senate_Number) VALUES ( ?, ?, ?, ?, ?)',
+('Kelly','Ayotte','New Hampshire','R',114 ) )
+cur.execute('INSERT INTO Senate114 (First_Name, Last_Name, State, Party, Senate_Number) VALUES ( ?, ?, ?, ?, ?)',
+('Cory','Booker','New Jersey','D',114 ) )
+cur.execute('INSERT INTO Senate114 (First_Name, Last_Name, State, Party, Senate_Number) VALUES ( ?, ?, ?, ?, ?)',
+('Robert','Menendez','New Jersey','D',114 ) )
+cur.execute('INSERT INTO Senate114 (First_Name, Last_Name, State, Party, Senate_Number) VALUES ( ?, ?, ?, ?, ?)',
+('Martin','Heinrich','New Mexico','D',114 ) )
+cur.execute('INSERT INTO Senate114 (First_Name, Last_Name, State, Party, Senate_Number) VALUES ( ?, ?, ?, ?, ?)',
+('Tom','Udall','New Mexico','D',114 ) )
+cur.execute('INSERT INTO Senate114 (First_Name, Last_Name, State, Party, Senate_Number) VALUES ( ?, ?, ?, ?, ?)',
+('Charles','Schumer','New York','D',114 ) )
+cur.execute('INSERT INTO Senate114 (First_Name, Last_Name, State, Party, Senate_Number) VALUES ( ?, ?, ?, ?, ?)',
+('Kirsten','Gillibrand','New York','D',114 ) )
+cur.execute('INSERT INTO Senate114 (First_Name, Last_Name, State, Party, Senate_Number) VALUES ( ?, ?, ?, ?, ?)',
+('Richard','Burr','North Carolina','R',114 ) )
+cur.execute('INSERT INTO Senate114 (First_Name, Last_Name, State, Party, Senate_Number) VALUES ( ?, ?, ?, ?, ?)',
+('Thom','Tillis','North Carolina','R',114 ) )
+cur.execute('INSERT INTO Senate114 (First_Name, Last_Name, State, Party, Senate_Number) VALUES ( ?, ?, ?, ?, ?)',
+('Heidi','Heitkamp','North Dakota','D',114 ) )
+cur.execute('INSERT INTO Senate114 (First_Name, Last_Name, State, Party, Senate_Number) VALUES ( ?, ?, ?, ?, ?)',
+('John','Hoeven','North Dakota','R',114 ) )
+cur.execute('INSERT INTO Senate114 (First_Name, Last_Name, State, Party, Senate_Number) VALUES ( ?, ?, ?, ?, ?)',
+('Sherrod','Brown','Ohio','D',114 ) )
+cur.execute('INSERT INTO Senate114 (First_Name, Last_Name, State, Party, Senate_Number) VALUES ( ?, ?, ?, ?, ?)',
+('Rob','Portman','Ohio','R',114 ) )
+cur.execute('INSERT INTO Senate114 (First_Name, Last_Name, State, Party, Senate_Number) VALUES ( ?, ?, ?, ?, ?)',
+('James','Lankford','Oklahoma','R',114 ) )
+cur.execute('INSERT INTO Senate114 (First_Name, Last_Name, State, Party, Senate_Number) VALUES ( ?, ?, ?, ?, ?)',
+('James','Inhofe','Oklahoma','R',114 ) )
+cur.execute('INSERT INTO Senate114 (First_Name, Last_Name, State, Party, Senate_Number) VALUES ( ?, ?, ?, ?, ?)',
+('Ron','Wyden','Oregon','D',114 ) )
+cur.execute('INSERT INTO Senate114 (First_Name, Last_Name, State, Party, Senate_Number) VALUES ( ?, ?, ?, ?, ?)',
+('Jeff', 'Merkley', 'Oregon', 'D' ,114 ) )
+cur.execute('INSERT INTO Senate114 (First_Name, Last_Name, State, Party, Senate_Number) VALUES ( ?, ?, ?, ?, ?)',
+( 'Michael', 'Enzi', 'Wyoming', 'R', 114 ) )
+cur.execute('INSERT INTO Senate114 (First_Name, Last_Name, State, Party, Senate_Number) VALUES ( ?, ?, ?, ?, ?)',
+('John', 'Barrasso', 'Wyoming', 'R', 114 ) )
+cur.execute('INSERT INTO Senate114 (First_Name, Last_Name, State, Party, Senate_Number) VALUES ( ?, ?, ?, ?, ?)',
+('Ron', 'Johnson', 'Wisconsin', 'R', 114 ) )
+cur.execute('INSERT INTO Senate114 (First_Name, Last_Name, State, Party, Senate_Number) VALUES ( ?, ?, ?, ?, ?)',
+('Tammy', 'Baldwin', 'Wisconsin', 'D', 114 ) )
+cur.execute('INSERT INTO Senate114 (First_Name, Last_Name, State, Party, Senate_Number) VALUES ( ?, ?, ?, ?, ?)',
+( 'Joe', 'Manchin', 'West Virginia', 'D', 114 ) )
+cur.execute('INSERT INTO Senate114 (First_Name, Last_Name, State, Party, Senate_Number) VALUES ( ?, ?, ?, ?, ?)',
+('Shelly', 'Capito', 'West Virginia', 'R', 114 ) )
+cur.execute('INSERT INTO Senate114 (First_Name, Last_Name, State, Party, Senate_Number) VALUES ( ?, ?, ?, ?, ?)',
+('Patty', 'Murray', 'Washington', 'D', 114 ) )
+cur.execute('INSERT INTO Senate114 (First_Name, Last_Name, State, Party, Senate_Number) VALUES ( ?, ?, ?, ?, ?)',
+('Maria', 'Cantwell', 'Washington', 'D', 114 ) )
+cur.execute('INSERT INTO Senate114 (First_Name, Last_Name, State, Party, Senate_Number) VALUES ( ?, ?, ?, ?, ?)',
+( 'Tim', 'Kaine', 'Virginia', 'D', 114 ) )
+cur.execute('INSERT INTO Senate114 (First_Name, Last_Name, State, Party, Senate_Number) VALUES ( ?, ?, ?, ?, ?)',
+('Mark', 'Warner', 'Virginia', 'D', 114 ) )
+cur.execute('INSERT INTO Senate114 (First_Name, Last_Name, State, Party, Senate_Number) VALUES ( ?, ?, ?, ?, ?)',
+('Bernard', 'Sanders', 'Vermont', 'I', 114 ) )
+cur.execute('INSERT INTO Senate114 (First_Name, Last_Name, State, Party, Senate_Number) VALUES ( ?, ?, ?, ?, ?)',
+('Patrick', 'Leahy', 'Vermont', 'D', 114 ) )
+cur.execute('INSERT INTO Senate114 (First_Name, Last_Name, State, Party, Senate_Number) VALUES ( ?, ?, ?, ?, ?)',
+( 'Orrin', 'Hatch', 'Utah', 'R', 114 ) )
+cur.execute('INSERT INTO Senate114 (First_Name, Last_Name, State, Party, Senate_Number) VALUES ( ?, ?, ?, ?, ?)',
+('Mike', 'Lee', 'Utah', 'R', 114 ) )
+cur.execute('INSERT INTO Senate114 (First_Name, Last_Name, State, Party, Senate_Number) VALUES ( ?, ?, ?, ?, ?)',
+('Ted', 'Cruz', 'Texas', 'R', 114 ) )
+cur.execute('INSERT INTO Senate114 (First_Name, Last_Name, State, Party, Senate_Number) VALUES ( ?, ?, ?, ?, ?)',
+('John', 'Cornyn', 'Texas', 'R', 114 ) )
+cur.execute('INSERT INTO Senate114 (First_Name, Last_Name, State, Party, Senate_Number) VALUES ( ?, ?, ?, ?, ?)',
+( 'Bob', 'Corker', 'Tennessee', 'R', 114 ) )
+cur.execute('INSERT INTO Senate114 (First_Name, Last_Name, State, Party, Senate_Number) VALUES ( ?, ?, ?, ?, ?)',
+('Lamar', 'Alexander', 'Tennessee', 'R', 114 ) )
+cur.execute('INSERT INTO Senate114 (First_Name, Last_Name, State, Party, Senate_Number) VALUES ( ?, ?, ?, ?, ?)',
+('Mike', 'Rounds', 'South Dakota', 'R', 114 ) )
+cur.execute('INSERT INTO Senate114 (First_Name, Last_Name, State, Party, Senate_Number) VALUES ( ?, ?, ?, ?, ?)',
+('John', 'Thune', 'South Dakota', 'R', 114 ) )
+cur.execute('INSERT INTO Senate114 (First_Name, Last_Name, State, Party, Senate_Number) VALUES ( ?, ?, ?, ?, ?)',
+( 'Tim', 'Scott', 'South Carolina', 'R', 114 ) )
+cur.execute('INSERT INTO Senate114 (First_Name, Last_Name, State, Party, Senate_Number) VALUES ( ?, ?, ?, ?, ?)',
+('Lindsey', 'Graham', 'South Carolina', 'R', 114 ) )
+cur.execute('INSERT INTO Senate114 (First_Name, Last_Name, State, Party, Senate_Number) VALUES ( ?, ?, ?, ?, ?)',
+('Sheldon', 'Whitehouse', 'Rhode Island', 'D', 114 ) )
+cur.execute('INSERT INTO Senate114 (First_Name, Last_Name, State, Party, Senate_Number) VALUES ( ?, ?, ?, ?, ?)',
+('Jack', 'Reed', 'Rhode Island', 'D', 114 ) )
+cur.execute('INSERT INTO Senate114 (First_Name, Last_Name, State, Party, Senate_Number) VALUES ( ?, ?, ?, ?, ?)',
+('Pat', 'Toomey', 'Pennsylvania', 'R', 114 ) )
+cur.execute('INSERT INTO Senate114 (First_Name, Last_Name, State, Party, Senate_Number) VALUES ( ?, ?, ?, ?, ?)',
+('Robert', 'Casey', 'Pennsylvania', 'D', 114 ) )
+conn.commit
+
+# Print Out Database
+def data_entry():
+	c.execute("SELECT First_Name Last_Name State Party Senate_Number FROM Senate114")
+	conn.commit()
+# Print Number of Senators Per Party
+print'Senate114'
+cur.execute("SELECT COUNT(First_Name) Last_Name FROM Senate114 WHERE Party = 'D'")
+for row in cur:
+	print "The Total Number of Democrats is:", row
+
+cur.execute("SELECT COUNT(First_Name) Last_Name FROM Senate114 WHERE Party = 'R'")
+for i in cur:
+	print "The Total Number of Republicans is:", i
+
+cur.execute("SELECT COUNT(First_Name) Last_Name FROM Senate114 WHERE Party = 'I'")
+for a in cur:
+	print "The Total Number of Independents is:", a
